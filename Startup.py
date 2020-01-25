@@ -1,3 +1,5 @@
+from random import randrange
+
 class Node:
 
     def __init__(self, internal_number_provided):
@@ -40,5 +42,13 @@ n1.addNode(n4)
 n1.addNode(n5)
 n1.addNode(n6)
 n1.addNode(n3)
+
+num = 0
+
+while (num < 1000):
+    random_number = randrange(10000)
+    random_node = Node(random_number)
+    n1.addNode(random_node)
+    num = num + 1
 
 print("End")
